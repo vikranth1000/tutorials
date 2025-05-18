@@ -25,6 +25,9 @@
 - [Technologies Used](#technologies-used)  
 - [Limitations](#limitations)  
 - [Future Work](#future-work)  
+- [Quick Feature Table](#quick-feature-table)
+- [API/Environment Configuration](#api-environment-configuration)
+- [Testing/Validation](#testing-validation)
 
 ---
 
@@ -36,6 +39,20 @@ This project is a real-time Bitcoin analytics dashboard that combines live crypt
 - LLM-generated natural language summaries
 - LLM-based forecasting with context and reasoning
 - A custom prompt box for user questions (with constraints)
+
+## Quick Feature Table
+| Feature                | Status  |
+|------------------------|---------|
+| Real-time price chart  | ✓       |
+| Moving averages        | ✓       |
+| Rolling volatility     | ✓       |
+| Hourly returns         | ✓       |
+| LLM summary            | ✓       |
+| LLM forecast           | ✓       |
+| Custom LLM prompt      | ✓       |
+| Download CSV           | ✓       |
+| Multi-symbol support   | ✗       |
+| Historical mode        | ✗       |
 
 ---
 
@@ -192,10 +209,34 @@ docker-compose up --build
 ## Notes
 - The dashboard only supports BTC/USDT (can be extended).
 - No historical mode or fine-tuning included in this version.
-- All code is documented and ready for submission.
+- All code is documented.
 
 ---
 
 **Contact:**  
 Vikranth Reddimasu  
 vikranthreddimasu@gmail.com
+
+---
+
+## API/Environment Configuration
+
+- **Binance API**: Uses the public REST endpoint by default. You can override the base URL by setting the `BINANCE_API_URL` environment variable.
+- **Ollama LLM**: The dashboard connects to a local Ollama server. You can set the model and server URL with:
+  - `OLLAMA_URL` (default: `http://localhost:11434`)
+  - `OLLAMA_MODEL` (default: `mistral:latest`)
+- To set these, use (for example):
+  ```bash
+  export OLLAMA_URL=http://localhost:11434
+  export OLLAMA_MODEL=mistral:latest
+  export BINANCE_API_URL=https://api.binance.com/api/v3
+  ```
+
+---
+
+## Testing/Validation
+
+- The dashboard was tested with live Binance data and with fallback CSV data (`data/fresh_btc_data.csv`) for offline/demo use.
+- LLM features were validated with a running Ollama server (Mistral model) and tested for both on-topic and off-topic prompts.
+- All UI controls, download functionality, and error handling were manually tested for robustness.
+- If the Binance API is unavailable, the dashboard will attempt to use the fallback CSV data for demonstration purposes.
