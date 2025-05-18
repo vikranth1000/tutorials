@@ -1,0 +1,17 @@
+# MacOS + Python + Jupyter artifacts
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environments
+.env
+.venv
+
+# Docker build cache
+*.tar
+*.img
+*.container

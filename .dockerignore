@@ -1,0 +1,6 @@
+# ignore caches, logs, data, models
+__pycache__/
+*.py[cod]
+*.log
+historical_analysis/data/
+models/

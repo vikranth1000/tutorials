@@ -1,0 +1,9 @@
+streamlit
+pandas
+plotly
+requests
+ollama
+numpy
+pmdarima
+joblib
+python-dateutil
