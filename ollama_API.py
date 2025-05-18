@@ -1,7 +1,15 @@
 # ollama_API.py
+"""
+ollama_API.py: Ollama LLM API interface for the real-time Bitcoin dashboard.
+
+- call_ollama: Sends a prompt to the local LLM (Ollama) and returns the response.
+  In the dashboard, prompts include context to restrict answers to Bitcoin analytics, and output is truncated to 400 characters for clarity.
+"""
+
 import os
 import logging
 from ollama import Client
+from ollama import chat
 
 LOG = logging.getLogger("ollama_api")
 
@@ -27,6 +35,18 @@ def _safe_call(*args, **kwargs) -> str:
         raise RuntimeError(f"Ollama inference error: {e}") from e
 
 def call_ollama(prompt: str, model: str = None) -> str:
+    """
+    Send a prompt to the local Ollama LLM and return the response.
+    Args:
+        prompt: The prompt string to send (should include context if needed)
+        model: Optional model override (default from env)
+    Returns:
+        The LLM's response as a string (stripped of whitespace)
+    """
     client = _get_client()
     model = model or OLLAMA_MODEL
     return _safe_call(model=model, prompt=prompt)
+
+def generate_forecast(prompt: str) -> str:
+    return call_ollama(prompt)
+

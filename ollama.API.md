@@ -14,6 +14,9 @@
 
 # Ollama API Tutorial
 
+> **Note:**
+> In the dashboard, `call_ollama` is always used with a context constraint: the LLM is instructed to only answer questions about Bitcoin price analytics, and to politely refuse off-topic questions. The dashboard also limits LLM output to 400 characters for clarity.
+
 This document describes how the **`ollama_API.py`** module works and how to use it in the context of real-time LLM-based forecasting and summarization tasks.
 
 It serves as a native API interface to interact with a **locally running LLM using Ollama**, and is tightly integrated into the project's data-to-summary/forecasting pipeline.
@@ -35,8 +38,8 @@ It wraps the client call in a function called `call_ollama()` that abstracts:
 - Error handling and logging
 
 This is used in both **Streamlit app** and **notebooks/scripts** where LLMs are needed for:
-- Trend summarization (e.g., “BTC gained 2.5% in the last hour”)
-- Next-value prediction (e.g., “Forecast = $30,512.00”)
+- Trend summarization (e.g., "BTC gained 2.5% in the last hour")
+- Next-value prediction (e.g., "Forecast = $30,512.00")
 
 ---
 

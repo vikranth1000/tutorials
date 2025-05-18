@@ -2,6 +2,16 @@ import json
 from pathlib import Path
 import pandas as pd
 
+"""
+ollama.example.py: Example usage of the Ollama LLM API for demonstration/testing.
+
+- Shows how to call the LLM with and without context constraints.
+- Dashboard-style prompts include a context to restrict answers to Bitcoin analytics.
+- Not used in the main dashboard app.
+
+Note: In the dashboard, prompts are always sent with a context constraint (only answer Bitcoin analytics questions) and the output is limited to 400 characters.
+"""
+
 # ── CONFIG ──────────────────────────────────────────────────────────────────────
 INPUT_CSV = Path("historical_analysis/data/historical_btc_data.csv")
 OUTPUT_JSONL = Path("finetune_data.jsonl")
@@ -41,3 +51,13 @@ def main():
 
 if __name__=="__main__":
     main()
+
+# Example with context constraint (dashboard style)
+if __name__=="__main__":
+    context = (
+        "You are a crypto market analyst. Only answer questions about Bitcoin price, trends, or analytics. "
+        "If the question is off-topic, politely refuse and say: 'Sorry, I can only answer questions about Bitcoin price analytics.'\n"
+    )
+    user_prompt = "What is the weather today?"
+    full_prompt = context + "\n" + user_prompt
+    print(call_ollama(full_prompt))

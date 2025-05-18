@@ -25,6 +25,25 @@ This example markdown explains how the **"Ollama Python #2"** project was implem
 - Trend summarization and forecasting using a locally running LLM via Ollama
 - Streamlit dashboard for interaction and visualization
 
+# Ollama Example Usage
+
+> **Note:**
+> In the dashboard, prompts are always sent with a context constraint: the LLM is instructed to only answer questions about Bitcoin price analytics, and to politely refuse off-topic questions. The dashboard also limits LLM output to 400 characters for clarity.
+
+## Example Prompt (Dashboard Style)
+
+```
+You are a crypto market analyst. Only answer questions about Bitcoin price, trends, or analytics. If the question is off-topic, politely refuse and say: 'Sorry, I can only answer questions about Bitcoin price analytics.'
+
+What is the weather today?
+```
+
+## Example Output
+
+```
+Sorry, I can only answer questions about Bitcoin price analytics.
+```
+
 ---
 
 ## Project Overview
@@ -87,7 +106,7 @@ This project delivers a **real-time Bitcoin price analysis dashboard** that:
 
 ## Challenges Faced
 
-- Ollama’s LLM inference is **compute-heavy** without GPU acceleration.
+- Ollama's LLM inference is **compute-heavy** without GPU acceleration.
 - Prompt design matters: unstructured prompts caused hallucinations or over-verbosity.
 - Streaming real-time data and inference simultaneously adds load on the system.
 - Handling time-zone alignment and proper API rate-limiting was important.
