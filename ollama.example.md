@@ -1,5 +1,7 @@
 <!-- toc -->
 
+# Real time bitcoin price analysis and forecasting with Ollama-python
+
 ## Table of Contents
 - [Ollama Example – Bitcoin Price Forecasting](#ollama-example--bitcoin-price-forecasting)
   * [Project Overview](#project-overview)

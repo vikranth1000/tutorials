@@ -33,12 +33,7 @@
 
 ## Overview
 
-This project is a real-time Bitcoin analytics dashboard that combines live crypto price data, technical analysis, and large language model (LLM) insights. It uses the Binance API, pandas, and a local Ollama LLM to provide:
-- Real-time price charts with moving averages
-- Rolling volatility and hourly returns
-- LLM-generated natural language summaries
-- LLM-based forecasting with context and reasoning
-- A custom prompt box for user questions (with constraints)
+This project delivers a professional, real-time Bitcoin analytics dashboard. It combines live price data from Binance, technical analysis, and large language model (LLM) insights using a local Ollama LLM. The dashboard is built with Dash and Plotly, and is designed for clarity, reproducibility, and robust analytics.
 
 ## Quick Feature Table
 | Feature                | Status  |
@@ -60,7 +55,7 @@ This project is a real-time Bitcoin analytics dashboard that combines live crypt
 
 ```
 Binance Price API ➔ Pandas DataFrame ➔ Technical Metrics (MA, Volatility, Returns) ➔
-Streamlit UI
+Dash UI
          └──➔ LLM Prompt ➔ Ollama Python API ➔ Text Summary
 ```
 
@@ -69,7 +64,7 @@ Streamlit UI
 - **Data Source**: Binance public REST API for BTC/USDT kline data.
 - **Analysis Layer**: Python (pandas, numpy) for real-time metric calculations.
 - **LLM Integration**: Ollama-Python connects to a local Mistral-7B model to summarize price trends.
-- **UI Layer**: Streamlit frontend using Plotly for interactive charts and dynamic controls.
+- **UI Layer**: Dash frontend using Plotly for interactive charts and dynamic controls.
 
 ---
 

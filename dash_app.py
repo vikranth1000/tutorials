@@ -361,9 +361,9 @@ def generate_llm_forecast(n_clicks, ma_window, ma_checks):
     snippet = "\n".join(f"{t}: {c:.2f}" for t, c in zip(times, closes))
     prompt = (
         "You are a crypto market analyst.\n"
-        "Here are the last 3 days of BTC/USDT hourly closing prices:\n"
+        "Here are the last 3 days of Bitcoin/USDT hourly closing prices:\n"
         f"{snippet}\n\n"
-        "In two sentences: Forecast the next hour's price, and briefly explain your reasoning based on the data above."
+        "Understand the above provided snippet data and, In two sentences: Forecast the next hour's price, and briefly explain your reasoning based on the data above. Never answer with information outseide the data.\n"
     )
     try:
         forecast = call_ollama(prompt)
