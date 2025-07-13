@@ -3,7 +3,7 @@
 - We want to use LLMs to increase the productivity of the team and the uniformity
   of our code base
 
-The main tasks that we believe should be automated are:
+- The main tasks that we believe should be automated are:
 
 ## Automate (part of the) code reviews
 

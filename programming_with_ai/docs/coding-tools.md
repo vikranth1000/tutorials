@@ -2,14 +2,9 @@
 
 ## Claude code
 
-- Refs
-  - https://www.anthropic.com/claude-code
-  - https://www.anthropic.com/engineering/claude-code-best-practices
-  - https://news.ycombinator.com/item?id=43735550
-
 ### Install and configure
 
-Follow https://docs.anthropic.com/en/docs/claude-code/setup
+- Follow the set-up from https://docs.anthropic.com/en/docs/claude-code/setup
 
 ### 
 
@@ -66,51 +61,7 @@ Follow https://docs.anthropic.com/en/docs/claude-code/setup
 ## Example Prompt
 > “Write a Python function that parses a CSV file and returns a dictionary keyed by column names. Include type hints and docstrings.”
 
-## OpenAI Codex
-./notes/cs.openai.txt
-
-## Aider
-
-./notes/IN_PROGRESS.cs.aider.txt
-
-## Google CLI
-https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/
-
-# EDAs
-
-ChatGPT
-Cursor
-
-# To reorg
-Devin
-
-./docs/code_guidelines/all.improve_productivity_using_ai.how_to_guide.md
-
-https://simonwillison.net/2025/Apr/16/
-
-https://simonwillison.net/series/using-llms/
-https://simonwillison.net/series/llms-annual-review/
-
-https://github.com/anthropics/anthropic-cookbook
-
-https://github.com/anthropics/courses
-
-# **New tools to try**
-
-### **ISSUE: Try refact.ai**
-
-Try [https://refact.ai/](https://refact.ai/)
-$10
-
-### **~~ISSUE: Try Aider~~**
-
-~~https://aider.chat/~~
-[~~https://github.com/Aider-AI/aider~~](https://github.com/Aider-AI/aider)
-~~Free~~
-
-### **ISSUE: Devin**
-
-### **ISSUE: Claude code**
+### Coding with Claude code
 
 // https://www.anthropic.com/engineering/claude-code-best-practices
 
@@ -229,44 +180,181 @@ $10
 - Create multiple checkouts of your repo
 - Use git worktrees
 
+### Must read refs
+  - https://www.anthropic.com/claude-code
+  - https://www.anthropic.com/engineering/claude-code-best-practices
+  - https://news.ycombinator.com/item?id=43735550
+
+// https://github.com/anthropics/anthropic-cookbook
+// https://github.com/anthropics/courses
 // https://www.anthropic.com/claude-code
 // https://docs.anthropic.com/en/docs/claude-code/tutorials
-
 // https://news.ycombinator.com/item?id=43735550
 
-### **ISSUE: Try Codeium**
+# OpenAI Codex
+./notes/cs.openai.txt
 
-### **Experiment with Rope to refactor Python code**
+# Aider
 
-[https://rope.readthedocs.io/en/latest/index.html](https://rope.readthedocs.io/en/latest/index.html)
+// ./notes/IN_PROGRESS.cs.aider.txt
+// ~~https://aider.chat/~~
+// [~~https://github.com/Aider-AI/aider~~](https://github.com/Aider-AI/aider)
+// ~~Free~~
+// # **Aider**
+// 
+// ## **Installing**
+// 
+// \> pip install aider-chat
+// 
+// In case of Unable to list files in git repo: \[Errno 24\] Too many open files
+// \> ulimit \-n 8192
+// 
+// \> aider \--model sonnet \--api-key anthropic=$ANTHROPIC\_KEY
+// 
+// [https://aider.chat/docs/faq.html\#can-i-use-aider-in-a-large-mono-repo](https://aider.chat/docs/faq.html#can-i-use-aider-in-a-large-mono-repo)
+// 
+// Tie the output to a markdown
+// \> aider \--model sonnet \--api-key anthropic=$ANTHROPIC\_KEY \--chat-history-file aider\_chat.md
 
-# **Aider**
+# Google CLI
 
-## **Installing**
+// https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/
 
-\> pip install aider-chat
+# EDAs
 
-In case of Unable to list files in git repo: \[Errno 24\] Too many open files
-\> ulimit \-n 8192
+- The goal of this guide is to inspire users to be more productive using AI
+  tools, successfully accomplish initial set-up. For detailed documentation
+  follow the suggested links.
 
-\> aider \--model sonnet \--api-key anthropic=$ANTHROPIC\_KEY
+## GitHub Copilot
 
-[https://aider.chat/docs/faq.html\#can-i-use-aider-in-a-large-mono-repo](https://aider.chat/docs/faq.html#can-i-use-aider-in-a-large-mono-repo)
+### Confirm you have access to a license
 
-Tie the output to a markdown
-\> aider \--model sonnet \--api-key anthropic=$ANTHROPIC\_KEY \--chat-history-file aider\_chat.md
+1. Visit https://github.com/settings/copilot
+2. The page should read that **GitHub Copilot Business is active for your
+   account**
+   - If not, contact the Infra team / GP
 
+### VSCode set-up
 
-Tools
-Cursor
-Free?
-Causify can get a license
-Cursor: it's a porting of VS code + Copilot, with better AI - human integration
-Our tools
-llm_transform.py: a tool we have developed that process files through a prompt and / or with vim
-llm_apply_cfile.py
-Aider
-Free:
-https://aider.chat/
-https://github.com/Aider-AI/aider
+1. Open a new VSCode window and open the extensions marketplace with
+   `CMD + Shift + X`
+2. Install 2 extensions
+   - GitHub Copilot
+   - GitHub Copilot Chat
+3. VSCode might prompt you to sign in using your GH account via a notification
+   window in the bottom right, unless you are already signed in
+   - You can also sign in by clicking the "Accounts" button in the bottom left
+     of the window
 
+- Reference document: https://code.visualstudio.com/docs/copilot/setup
+
+- After successfully logging in, Copilot should automatically start suggesting
+  code
+  - If it doesn't visit the troubleshooting page
+    https://docs.github.com/en/copilot/troubleshooting-github-copilot/troubleshooting-common-issues-with-github-copilot
+
+### Copilot Code suggestions
+
+- Reference document:
+  https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot
+
+- The following steps will provide an example for resolution of issue
+  https://github.com/cryptokaizen/cmamp/issues/9451 using GitHub Copilot
+- In this GH issue we want to add tests for the function
+  `datapull/common/universe/universe.py::get_vendor_universe_as_asset_ids`
+- Go to the file `datapull/common/universe/test/test_universe.py`
+  - If there is a test called `Test_get_vendor_universe_as_assert_ids` you can
+    delete it for this example
+
+- For example, suppose we want to add new test cases, typing
+  `class Test_get_vendor_universe_as_assert_ids(` and Copilot suggests code
+  <img src="figs/improve_productivity_using_ai/image1.png" style="" />
+
+- We can use the mouse to control the generated code or use
+  - `TAB` accepts the suggestion
+  - `Control + →` will accept only the next word (useful if the suggested code
+    is only "kind-of" correct)
+  - `Alt + [` / `Alt + ]` show previous / next suggestion, since usually Copilot
+    generates multiple ones
+  - For a full list of shortcuts refer to the reference docs in the note above
+
+- It is also possible to describe a test in natural language
+  <img src="figs/improve_productivity_using_ai/image2.png" style="" />
+
+### Copilot Chat
+
+- Reference document:
+  https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide
+
+1. You can access the chat in the activity bar on the left
+   - If you don't see the icon, right-click on the activity bar and enable
+     "Chat"
+
+2. Apart from the general ChatGPT like capabilities, Copilot chat offers unique
+   features related to coding
+   - **Chat participants**
+     - `@workspace` has context about the code in the current workspace, this
+       helps Copilot consider the project structure
+     - You can also specify "this file" when engineering a prompt for the tab
+       you have opened
+   - **Chat context**
+     - You can use so-called chat variables to include more context; a chat
+       variable is accessed via `#`,
+       - `#file` adds additional context from a given file
+         - E.g. `#file:datapull/common/data/universe.py`
+   - **Slash commands**
+     - Provide shortcuts to commonly used features
+       - E.g. `/tests` to generate unit tests for the selected code
+
+3. For a quick suggestion, you can use inline chat using current line or a
+   selection and `CMD + i`
+   <img src="figs/improve_productivity_using_ai/image3.png" style="" />
+   <img src="figs/improve_productivity_using_ai/image4.png" style="" />
+
+4. Right clicking in a window or on a selection `Copilot` offers quick actions
+   of Copilot similar to slash commands, such as:
+   - `Explain this`
+   - `Fix this`
+   - `Generate docs`
+   - `Generate tests`
+
+### Tips & Tricks
+
+- The entry point of the GitHub copilot documentation is
+  https://docs.github.com/en/copilot
+- Tips on prompt engineering:
+  https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot
+- Example prompts:
+  https://docs.github.com/en/copilot/using-github-copilot/example-use-cases/example-prompts-for-copilot-chat
+
+- For detailed documentation of integrating VSCode and Copilot:
+  https://code.visualstudio.com/docs/copilot/overview
+
+## ChatGPT
+
+## Cursor
+
+## Devin
+
+./docs/code_guidelines/all.improve_productivity_using_ai.how_to_guide.md
+
+https://simonwillison.net/2025/Apr/16/
+
+https://simonwillison.net/series/using-llms/
+https://simonwillison.net/series/llms-annual-review/
+
+// New tools to try
+// Try refact.ai** Try [https://refact.ai/](https://refact.ai/) $10
+
+// ## Devin
+
+// ## Codeium
+
+// ## Rope
+// Experiment with Rope to refactor Python code
+// [https://rope.readthedocs.io/en/latest/index.html](https://rope.readthedocs.io/en/latest/index.html)
+
+// Our tools
+// llm_transform.py: a tool we have developed that process files through a prompt and / or with vim
+// llm_apply_cfile.py
