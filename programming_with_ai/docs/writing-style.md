@@ -1,4 +1,4 @@
-# Technical Book Notes Format
+# Technical Notes Format
 
 ## Principles
 
@@ -32,4 +32,3 @@
 - **Diagrams**
   - Use `mermaid`, `graphviz`, or `tikz` fenced code blocks
   - Prefer flowcharts, sequence diagrams, or graphs
-  - Label connections and nodes

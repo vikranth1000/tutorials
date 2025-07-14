@@ -2,78 +2,75 @@
 
 ## Claude code
 
-### Install and configure
+### Introduction
 
-- Follow the set-up from https://docs.anthropic.com/en/docs/claude-code/setup
+- **Install and configure**
+  - Follow the set-up from https://docs.anthropic.com/en/docs/claude-code/setup
 
-### 
+- **What is Claude Code?**
+  - Specialized capability of Claude for software development tasks
+  - Designed to help with:
+    - Writing code from scratch
+    - Debugging existing code
+    - Explaining code logic
+    - Converting code between languages
+    - Generating tests and documentation
 
-## What is Claude Code?
-- Specialized capability of Claude for software development tasks.
-- Designed to help with:
-  - Writing code from scratch.
-  - Debugging existing code.
-  - Explaining code logic.
-  - Converting code between languages.
-  - Generating tests and documentation.
+- **Core Use Cases**
+  - **Explain**
+    - Break down code line-by-line
+    - Clarify complex algorithms
+  - **Write**
+    - Generate functions, classes, modules
+    - Follow user style guides and constraints
+  - **Transform**
+    - Refactor code for readability or performance
+    - Convert code to different frameworks/languages
+  - **Complete**
+    - Fill in partial implementations
+    - Suggest alternative solutions
+  - **Test**
+    - Generate unit tests
+    - Identify edge cases
 
-## Core Use Cases
-- **Explain**
-  - Break down code line-by-line.
-  - Clarify complex algorithms.
-- **Write**
-  - Generate functions, classes, modules.
-  - Follow user style guides and constraints.
-- **Transform**
-  - Refactor code for readability or performance.
-  - Convert code to different frameworks/languages.
-- **Complete**
-  - Fill in partial implementations.
-  - Suggest alternative solutions.
-- **Test**
-  - Generate unit tests.
-  - Identify edge cases.
+- **Strengths**
+  - Handles long code files and complex projects
+  - Maintains conversational context for iterative coding
+  - Produces clear, well-commented code
+  - Supports multiple programming languages
 
-## Strengths
-- Handles long code files and complex projects.
-- Maintains conversational context for iterative coding.
-- Produces clear, well-commented code.
-- Supports multiple programming languages.
+- **How It Works**
+- Uses context window to “read” entire files if needed
+- Retains history to apply consistent style/logic
+- Can work with multiple files at once
 
-## How It Works
-- Uses context window to “read” entire files if needed.
-- Retains history to apply consistent style/logic.
-- Can work with multiple files at once.
+- **Best Practices**
+  - Provide clear instructions:
+    - Define programming language
+    - Specify libraries, versions, frameworks
+    - Share input/output expectations
+  - Break requests into steps for complex tasks
+  - Ask for explanations alongside generated code to verify intent
 
-## Best Practices
-- Provide clear instructions:
-  - Define programming language.
-  - Specify libraries, versions, frameworks.
-  - Share input/output expectations.
-- Break requests into steps for complex tasks.
-- Ask for explanations alongside generated code to verify intent.
-
-## Limitations
-- May produce non-compiling code — always test.
-- Can hallucinate libraries or functions — verify usage.
-- May require iterative refinement for large systems.
-
-## Example Prompt
-> “Write a Python function that parses a CSV file and returns a dictionary keyed by column names. Include type hints and docstrings.”
+- **Limitations**
+  - May produce non-compiling code — always test
+  - Can hallucinate libraries or functions — verify usage
+  - May require iterative refinement for large systems
 
 ### Coding with Claude code
 
-// https://www.anthropic.com/engineering/claude-code-best-practices
+- From [https://www.anthropic.com/engineering/claude-code-best-practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 - Claude Code
   - Command line for agentic coding
-  - Provides model access without forcing workflows
+  - Provide model access without forcing workflows
 
-- Automatically pulls context into prompts
+#### 1. Customize your setup
 
-### 1. Customize your setup
+- Claude Code automatically pulls context into prompts
 
 - `CLAUDE.md` is pulled in at the beginning of each context
+  - Common bash commands
   - Code style guidelines
   - Testing instructions
   - Repo etiquette
@@ -81,61 +78,113 @@
 
 - It can be in each dir of the repo and in your home folder
 
-- Tune your `CLAUDE.md`
-  - Use instructions, e.g., `IMPORTANT` and `YOU MUST`
+- You need to tune your `CLAUDE.md` by iterating on its effectiveness
+  - Use prompt improver
+  - Tune instructions
+    - E.g., `IMPORTANT` and `YOU MUST` to improve adherence
 
-### 2. Give Claude more tools
+- Claude Code requests permission for any action that might modify your system
+  - It prioritize safety
+  - You can customize `allowlist` in `.claude/settings.json`
+    ```bash
+    > more .claude/settings.local.json
+    {
+      "permissions": {
+        "allow": [
+          "Bash(find:*)",
+          "Bash(invoke --list)",
+          "Bash(grep:*)",
+          "Bash(ls:*)",
+          "WebFetch(domain:github.com)",
+          "Bash(python -m mypy:*)",
+          "Bash(python:*)",
+          "Bash(invoke git_branch_create -i 903)",
+          "Bash(gh pr create:*)",
+          "Bash(gh pr view:*)",
+          "Bash(invoke git_branch_create *)",
+          "Bash(git add:*)",
+          "Bash(git push:*)",
+          "Bash(git commit:*)"
+        ],
+        "deny": []
+      }
+    }
+    ```
+
+#### 2. Give Claude more tools
+
+- You can give Claude more tools
+  - Knows and Unix tools
+  - Knows GitHub `gh` CLI
+  - Knows MCP and REST APIs
+  - Give your tools name and usage examples
+  - Document used tools in `CLAUDE.md`
 
 - Curate list of allowed tools
   - `.claude/settings.json`
 
-- Give Claude more tools
-  - Knows MCP and REST APIs
-  - Knows GitHub `gh` and Unix tools
-  - Give your tools name and usage examples
-  - Document used tools in `CLAUDE.md`
-
 - Store prompt templates in Markdown files in `.claude/commands`
-  - Become available as `/` commands (you can pass commands)
+  - Are available as `/` commands (you can pass commands)
+  - E.g., for `.claude/commands/fix_gh_issue.md`, you can run
+    `/project:fix_gh_issue 1234`
 
-### 3. Try common workflows
+#### 3. Try common workflows
 
-- Ask to read relevant files (but tell it not to write any code)
-  - E.g., `read logging.py`
-- Ask to make a plan for how to approach a specific problem
-  - Use the word `think` < `think hard` < `ultrathink` to allocate thinking
-    budget
-  - Create a doc (or GH issue) with its plan
+- **Explore**
+  - Ask to read relevant files (but tell it not to write any code)
+    - E.g., `read logging.py`
+    - E.g., `read the file that handles logging`
+  - Codebase Q&A
+    - Use for learning and exploration
+    - Ask questions like in pair programming
+
+- **Plan**
+  - Claude tends to jump to coding a solution
+  - Asking Claude to plan first improves performance for the tasks that require
+    thinking upfront
+  - Ask to make a plan for how to approach a specific problem
+    - Use the word `think` < `think hard` < `ultrathink` to allocate thinking
+      budget
+    - Create a markdown doc with its plan
+
+- **Code**
 - Ask to implement solution in code
   - Ask to verify how reasonable is the solution or pieces
 - Ask to commit and create a PR
-  - Ask to update READMEs and changelog
+  - Ask to update `README` and changelog
 
-- Test-driven development (TDD) becomes powerful with agentic coding
-- Ask to write tests based on expected input / output pairs
-  - Be explicit asking to avoid creating mock implementations for functionalities
-    that don't exist yet
-- Tell to run the tests and confirm they fail
-  - Often helpful to tell not to write implementation
-- Ask to commit tests when satisfied with them
-- Ask to write code that passes the tests, without modifying the tests
-  - Tell to keep going until all tests pass
-- Ask to commit code when satisfied
+- **TDD development**
+  - Test-driven development (TDD) becomes powerful with agentic coding
+    - Claude performs best when it has a clear target to iterate against
+  - Ask to write tests based on expected input / output pairs
+    - Be explicit asking to avoid creating mock implementations for functionalities
+      that don't exist yet
+  - Tell to run the tests and confirm they fail
+    - Often helpful to tell not to write implementation
+  - Ask to commit tests when satisfied with them
+  - Ask to write code that passes the tests, without modifying the tests
+    - Tell to keep going until all tests pass
+  - Ask to commit code when satisfied
 
-- Codebase Q&A
-  - Use for learning and exploration
-  - Ask questions like in pair programming
-
-- Use to interact with Git
+- Use Claude to interact with Git
+  - E.g.,
+    ```bash
+    > echo "How to show the Git history of last 5 commits" | claude -p
+    `git log --oneline -5`
+    ```
+  - "Write a commit message"
+  - "Resolve rebase conflicts"
+  
 - Use to interact with GitHub
   - Create PRs
-  - Fix failing builds or linter warnings
+  - Fix failing builds 
+  - Fix linter warnings
 
 - Read and write Jupyter notebooks
   - Have CC and .ipynb opened in VS code
-  - Make data "aesthetically pleasing"
+  - "Make data visualization aesthetically pleasing"
 
-### 4. Optimize your workflow
+#### 4. Optimize your workflow
 
 - Be specific and give clear directions to avoid iterations
   - Bad: Add tests for `foo.py`
@@ -145,17 +194,19 @@
 - Use images when working with design mocks for UI and visual charts for analysis
 
 - Give URLs to fetch and read
+  - "Brainstorm fixes for https://github.com/..."
 
 - You can get better results by being an active collaborator and guiding
   - Explain the task thoroughly
   - Course correct
 
+- To course correct:
   - Ask to make a plan
   - Press escape to interrupt
   - Double-escape to jump back in history and edit a previous prompt
   - Ask to undo changes
 
-- Use /clear to keep context focused during long sessions
+- Use `/clear` to keep context focused during long sessions
 
 - Use a checklists for complex workflows
   - E.g., when fixing lint errors, tell to run the lint command, write all
@@ -163,33 +214,31 @@
   - Instruct to address each issue one by one, fixing and verifying before
     checking it off and moving to the next one
 
-### 5. Use headless mode to automate infra
+#### 5. Use headless mode to automate infra
 
-- Use `-p` flag to interact with CI, pre-commit hooks, automation scripts
+- Use `-p` flag to have Claude interact with CI, pre-commit hooks, automation
+  scripts
   - E.g., triage a new issue created in a repo
 - Use as a linter
   - Identify typos, stale comments, misleading function or var names
 
-### 6. Multi-Claude workflows
+#### 6. Multi-Claude workflows
 
 - It is better to have a single instance handle everything
-  - Have one C write code, another C verify it
-  - Use C to write code
-  - Start a second C in another terminal
-  - Have a second C review the first C's work
+  - Have one Claude write code
+  - Start a second Claude in another terminal
+  - Have a second Claude review the first Claude's work
 - Create multiple checkouts of your repo
-- Use git worktrees
+  - E.g., `git clone` the same repo in multiple directories
+- Use `git worktrees`
 
-### Must read refs
-  - https://www.anthropic.com/claude-code
-  - https://www.anthropic.com/engineering/claude-code-best-practices
-  - https://news.ycombinator.com/item?id=43735550
-
+### References
+- https://www.anthropic.com/claude-code
+- https://www.anthropic.com/engineering/claude-code-best-practices
+- https://news.ycombinator.com/item?id=43735550
 // https://github.com/anthropics/anthropic-cookbook
 // https://github.com/anthropics/courses
-// https://www.anthropic.com/claude-code
 // https://docs.anthropic.com/en/docs/claude-code/tutorials
-// https://news.ycombinator.com/item?id=43735550
 
 # OpenAI Codex
 ./notes/cs.openai.txt
@@ -220,11 +269,11 @@
 
 // https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/
 
-# EDAs
+# IDEs
 
 - The goal of this guide is to inspire users to be more productive using AI
   tools, successfully accomplish initial set-up. For detailed documentation
-  follow the suggested links.
+  follow the suggested links
 
 ## GitHub Copilot
 
@@ -337,12 +386,10 @@
 
 ## Devin
 
-./docs/code_guidelines/all.improve_productivity_using_ai.how_to_guide.md
+// https://simonwillison.net/2025/Apr/16/
 
-https://simonwillison.net/2025/Apr/16/
-
-https://simonwillison.net/series/using-llms/
-https://simonwillison.net/series/llms-annual-review/
+// https://simonwillison.net/series/using-llms/
+// https://simonwillison.net/series/llms-annual-review/
 
 // New tools to try
 // Try refact.ai** Try [https://refact.ai/](https://refact.ai/) $10
