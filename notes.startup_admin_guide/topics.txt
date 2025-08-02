@@ -1,63 +1,44 @@
-Here’s an organized set of 5 high-level sections that group the TOC themes cohesively:
-
-⸻
-
 1. Foundations & Startup Strategy
-	•	Introduction to Startups
-	•	Problem Discovery and Opportunity Identification
-	•	Ideation and Value Proposition Design
-	•	Customer Discovery and Validation
-	•	Business Models and Product-Market Fit
-	•	Legal and Operational Essentials
-	•	Startup Pivots and Failures
-	•	Exit Strategies
-
-⸻
+   - Introduction to Startups
+   - Problem Discovery and Opportunity Identification
+   - Ideation and Value Proposition Design
+   - Customer Discovery and Validation
+   - Business Models and Product-Market Fit
+   - Legal and Operational Essentials
+   - Startup Pivots and Failures
+   - Exit Strategies
 
 2. Product, Design & Development
-	•	MVP Development and Prototyping
-	•	Product Management
-	•	Design (UX/UI)
-	•	Engineering Culture & DevOps
-
-⸻
+   - MVP Development and Prototyping
+   - Product Management
+   - Design (UX/UI)
+   - Engineering Culture & DevOps
 
 3. Go-To-Market & Growth
-	•	Go-To-Market Strategy
-	•	Marketing & Growth
-	•	Customer Success & Support
-	•	Scaling and Growth
-
-⸻
+   - Go-To-Market Strategy
+   - Marketing & Growth
+   - Customer Success & Support
+   - Scaling and Growth
 
 4. Finance, Operations & Compliance
-	•	Fundraising and Startup Finance
-	•	Metrics, KPIs, and Lean Analytics
-	•	Finance & Accounting
-	•	Operations
-	•	Legal & Compliance
-
-⸻
+   - Fundraising and Startup Finance
+   - Metrics, KPIs, and Lean Analytics
+   - Finance & Accounting
+   - Operations
+   - Legal & Compliance
 
 5. People, Culture & Execution
-	•	Team Building and Startup Culture
-	•	Human Resources & Talent
-	•	User Research & Customer Development
-	•	Data & Analytics
-
-⸻
-
-Let me know if you’d like this turned into a visual map or exportable outline.
-
-
-1. Foundations & Startup Strategy
+   - Team Building and Startup Culture
+   - Human Resources & Talent
+   - User Research & Customer Development
+   - Data & Analytics
 
 ## 1. Introduction to Startups
 - What is a Startup?
 - Myths vs. Realities
 - The Entrepreneurial Mindset
 - History of Entrepreneurship and Tech Innovation
-- NEW: Vision, Mission, and Strategic Planning
+- Vision, Mission, and Strategic Planning
 
 - Refs:
  - The Lean Startup – Eric Ries
@@ -93,7 +74,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - Customer Segmentation
 - Conducting Effective Interviews
 - Building a Customer Persona
-- NEW: Go-To-Market Fit (Messaging, Channel-Product Alignment)
+- Go-To-Market Fit (Messaging, Channel-Product Alignment)
 
 - Refs
  - Talking to Humans – Giff Constable
@@ -105,7 +86,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
  - Different Types of Business Models (B2B, B2C, SaaS, Marketplace)
  - Minimum Viable Product (MVP)
  - Signs of Product-Market Fit
- - NEW: Competitive Analysis & Positioning (SWOT, differentiation)
+ - Competitive Analysis & Positioning (SWOT, differentiation)
 
 - Refs
  - Business Model Generation – Strategyzer
@@ -140,8 +121,8 @@ Let me know if you’d like this turned into a visual map or exportable outline.
  - Types of Investors: Angels, VCs, Accelerators
  - SAFE, Convertible Notes, Equity
  - Financial Modeling for Startups
- - NEW: Board Management & Investor Relations
- - NEW: Advisory Boards and Mentors
+ - Board Management & Investor Relations
+ - Advisory Boards and Mentors
 
 - Refs
  - Venture Deals – Brad Feld & Jason Mendelson
@@ -165,7 +146,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - Hiring in Early-Stage Startups
 - Equity Splits and Vesting
 - Building Culture from Day One
-- NEW: DEI in Startups (Hiring Inclusively, Reducing Bias)
+- DEI in Startups (Hiring Inclusively, Reducing Bias)
 
 - Refs
  - The Hard Thing About Hard Things – Ben Horowitz
@@ -178,7 +159,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - Intellectual Property and NDAs
 - Regulatory Compliance
 - Startup Operations 101
-- NEW: Ethics and Social Responsibility in Tech
+- Ethics and Social Responsibility in Tech
 
 - Refs:
  - Startup Law and Fundraising – Alejandro Cremades
@@ -191,7 +172,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - Operational Scaling vs. Team Scaling
 - International Expansion
 - Managing Hypergrowth and Burnout
-- NEW: Remote & Distributed Teams (Tools, Culture, Process)
+- Remote & Distributed Teams (Tools, Culture, Process)
 
 - Refs:
  - Blitzscaling – Reid Hoffman & Chris Yeh
@@ -227,7 +208,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - Defining Product Vision and Roadmap
 - Prioritizing Features Based on User Needs
 - Cross-Functional Collaboration
-- NEW: Internal Knowledge Management (SOPs, Wikis)
+- Internal Knowledge Management (SOPs, Wikis)
 
 - Refs:
  - Inspired – Marty Cagan
@@ -268,7 +249,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - Internal Processes and Tools
 - Vendor Management and Compliance
 - Supporting Scalability and HR Interfaces
-- NEW: Tooling & Infrastructure (CRM, PM tools, vendor selection)
+- Tooling & Infrastructure (CRM, PM tools, vendor selection)
 
 - Refs
  - The E-Myth Revisited – Michael Gerber
@@ -289,7 +270,7 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - Contracts, Terms, and IP Protection
 - Regulatory Considerations (e.g., Fintech, Healthtech)
 - Risk Management and Due Diligence
-- NEW: Security & Data Privacy (GDPR, SOC2, etc.)
+- Security & Data Privacy (GDPR, SOC2, etc.)
 
 - Refs
  - Startup Law and Fundraising – Alejandro Cremades
@@ -331,3 +312,10 @@ Let me know if you’d like this turned into a visual map or exportable outline.
 - CI/CD and Managing Technical Debt
 - Choosing and Evolving the Tech Stack
 
+## EOS
+
+Traction: Get a Grip on Your Business, Gino Wickman
+Good to Great, Jim Collins
+The Four Obsessions of an Extraordinary Executive, Pat Lencioni
+How To Be A Great Boss, Gino Wickman/René Boer
+The Five Dysfunctions of a Team, Pat Lencioni
