@@ -208,6 +208,8 @@
 - Angel – Jason Calacanis
 - The Art of Startup Fundraising – Alejandro Cremades
 
+## Pitching
+
 ## Legal and Operational Essentials
 - Incorporation and Legal Structure
 - Intellectual Property and NDAs
