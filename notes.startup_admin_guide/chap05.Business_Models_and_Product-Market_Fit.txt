@@ -1,0 +1,11 @@
+## Business Models and Product-Market Fit
+- Business Model Canvas
+- Different Types of Business Models (B2B, B2C, SaaS, Marketplace)
+- Minimum Viable Product (MVP)
+- Signs of Product-Market Fit
+- Competitive Analysis & Positioning (SWOT, differentiation)
+
+### Refs
+- Business Model Generation – Strategyzer
+- The Lean Product Playbook – Dan Olsen
+- The Startup Guide to Product-Market Fit – Dan Hockenmaier & Julie Supan

@@ -1,0 +1,11 @@
+## Scaling and Growth
+- When to Scale
+- Operational Scaling vs. Team Scaling
+- International Expansion
+- Managing Hypergrowth and Burnout
+- Remote & Distributed Teams (Tools, Culture, Process)
+
+### Refs:
+- Blitzscaling – Reid Hoffman & Chris Yeh
+- High Growth Handbook – Elad Gil
+- Scaling Up – Verne Harnish

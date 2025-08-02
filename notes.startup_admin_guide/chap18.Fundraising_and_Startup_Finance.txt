@@ -1,0 +1,13 @@
+## Fundraising and Startup Finance
+- Bootstrapping vs. Venture Capital
+- Types of Investors: Angels, VCs, Accelerators
+- SAFE, Convertible Notes, Equity
+- Financial Modeling for Startups
+- Board Management & Investor Relations
+- Advisory Boards and Mentors
+
+### Refs
+- Venture Deals – Brad Feld & Jason Mendelson
+- Secrets of Sand Hill Road – Scott Kupor
+- Angel – Jason Calacanis
+- The Art of Startup Fundraising – Alejandro Cremades

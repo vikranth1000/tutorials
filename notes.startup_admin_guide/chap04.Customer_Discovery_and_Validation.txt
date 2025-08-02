@@ -1,0 +1,11 @@
+## Customer Discovery and Validation
+- Lean Startup Principles
+- Customer Segmentation
+- Conducting Effective Interviews
+- Building a Customer Persona
+- Go-To-Market Fit (Messaging, Channel-Product Alignment)
+
+### Refs
+- Talking to Humans – Giff Constable
+- The Four Steps to the Epiphany – Steve Blank
+- Lean Analytics – Alistair Croll & Benjamin Yoskovitz
