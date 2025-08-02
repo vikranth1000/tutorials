@@ -1,0 +1,2 @@
+notes/IN_PROGRESS.cs.The_Scrum_field_guide.Lacey.2012.txt
+tools.zenhub.txt
