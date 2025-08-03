@@ -395,6 +395,117 @@
 
 # Competitive Analysis & Positioning (SWOT, differentiation)
 
+* More on value capture
+- You should not stress out value capture in the beginning
+  - The amount of value you capture is proportional to the amount of value you
+    create
+  - You need to pass some of the value to your customer
+  - If your product saves people \$100, but it costs \$100 then your customers
+    are indifferent
+
+- Tokens can capture value in many ways (discussed later)
+- There are many pricing models:
+  - Value pricing
+    - Best approach
+    - Estimate how much value your are creating for your customers and charge a
+      part of that (e.g., 50-80%)
+  - Transaction pricing
+    - Every time you make a transaction, I get a cut of it
+    - E.g., financial exchange
+  - Recurring revenues
+    - E.g., there is a data service and you get a value out of it so you pay by
+      seat
+    - Some customers are getting a lot of value, others are getting small value
+    - You don't know who is making money so you can't charge it
+    - That's why people have multiple price tiers
+  - Services
+    - Somebody is paying you for doing something
+    - E.g., a plumber charging for time and materials
+
+* Commodity pricing
+- The service becomes "cost + epsilon"
+- E.g., consulting
+- Price competition brings down the price to raw materials and wages
+- Even if you are creating value, you are not capturing it
+- This is the best situation for customers
+
+- E.g., the Internet creates tons of value but you almost don't pay for it
+  - Internet is a commodity (like water)
+
+* 5 ways to build a $100m business
+- Hunt for 10,000 flies that pay you $10
+- Photoshop charges \$100 and need \$1m
+- Greenhouse, Salesforce (enterprise software): $100k people pay $1000
+- Big game hunting
+- Elephant hunting (e.g., Palantir): each customer pays $100,000k
+
+* More on defensibility
+- Competitors cannot easily enter the market or overtake your market share
+- E.g., network effect
+  - E.g., Facebook, Ethereum, Binance
+  - The platform that everybody uses is difficult to disrupt
+
+- Other sources of defensibility
+  - Economy of scale
+    - The R&D dept doesn't need to grow if you grow
+  - Pricing power
+    - You have the ability to squeeze your supplier, like others can't
+  - First mover advantage
+    - You are the first one to do something, so you build the relationships
+  - Access to capital
+    - Lots of business need working capital so they need to borrow money
+    - It's easier for you to raise or borrow money (maybe because you have a
+      great pedigree)
+    - If you have strong reputation or pedigree
+  - Access to talent
+  - Execution
+    - It is the weakest
+    - You can outrun your competitors
+    - I have ability to build faster, ship faster than my competitors
+
+* Market structure
+- In almost all industries there are companies with certain characteristics
+  - Some companies own the user relationship
+    - High value capture
+    - Network effects
+    - Brand
+  - Some companies are integrators (they put things together)
+    - Low value capture (they get squeezed between the extremes)
+    - Few moats
+  - Some companies own the tech platform
+    - High value capture
+    - High switching costs
+    - Economies of scale
+    - Technical barriers
+
+- E.g., mobile
+  - (Facebook, Apple) <-> Motorola <-> ARM
+- E.g., auto
+  - Tesla <-> Modine <-> Mobileye
+- E.g., streaming
+  - Netflix <-> Starz <-> AWS
+- E.g., computers
+  - Microsoft <-> Acer <-> Intel
+
+- Even if you have the best content but you need to go through Netflix to
+  distribute it
+  - Netflix wants to commoditize everyone else
+  - For this reason Disney started Disney+
+- AWS copies / adopts open source projects and puts them on their platform
+
+- Same phenomenon also in crypto
+  - Own user relationship: Coinbase, Binance
+  - Integrators: protocols (e.g., Uniswap)
+  - Tech platform: Ethereum, Bitcoin
+
+- Everyone tries to move up the curve
+  - Coinmarketcap and Coingecko start adding the buy button to allow trading
+  - Polkadot compete with other blockchains to have people build on top of them
+  - Uniswap builds a web interface to interact with users
+  - Binance builds a BNB chain 
+
+- At the bottom of the curve, your users is who is close to you
+
 /Users/saggese/src/notes1/notes/IN_PROGRESS.book.work.2011.Osterwalder.Business_model_generation.txt
 /Users/saggese/src/notes1/notes/IN_PROGRESS.book.work.2020.Blank.The_Startup_Owner_Manual.txt
 /Users/saggese/src/notes1/notes/IN_PROGRESS.course.cs.entrepreneurship_in_web3.Berkeley.txt
