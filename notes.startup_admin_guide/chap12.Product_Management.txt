@@ -1,10 +1,15 @@
-## Product Management
-- Defining Product Vision and Roadmap
-- Prioritizing Features Based on User Needs
-- Cross-Functional Collaboration
-- Internal Knowledge Management (SOPs, Wikis)
+# Product Management
 
-### Refs:
+## Defining Product Vision and Roadmap
+
+## Prioritizing Features Based on User Needs
+
+## Cross-Functional Collaboration
+
+## Internal Knowledge Management (SOPs, Wikis)
+
+
+## Refs:
 - Inspired – Marty Cagan
 - Escaping the Build Trap – Melissa Perri
 - Build – Tony Fadell

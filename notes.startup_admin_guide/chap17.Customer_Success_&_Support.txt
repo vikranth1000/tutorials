@@ -1,7 +1,11 @@
-## Customer Success & Support
-- Onboarding and User Education
-- Handling Support Tickets and Feedback
-- Driving Retention and Referrals
+# Customer Success & Support
+
+## Onboarding and User Education
+
+## Handling Support Tickets and Feedback
+
+## Driving Retention and Referrals
+
 
 ### Refs
 - Customer Success – Nick Mehta

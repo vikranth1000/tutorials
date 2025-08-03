@@ -1,7 +1,11 @@
-## Human Resources & Talent
-- Hiring, Onboarding, and Retention
-- Compensation, Benefits, and Performance Reviews
-- Building and Managing Culture
+# Human Resources & Talent
+
+## Hiring, Onboarding, and Retention
+
+## Compensation, Benefits, and Performance Reviews
+
+## Building and Managing Culture
+
 
 ### Refs
 - Work Rules! – Laszlo Bock (ex-Google)

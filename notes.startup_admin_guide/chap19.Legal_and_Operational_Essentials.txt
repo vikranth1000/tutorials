@@ -1,11 +1,17 @@
-## Legal and Operational Essentials
-- Incorporation and Legal Structure
-- Intellectual Property and NDAs
-- Regulatory Compliance
-- Startup Operations 101
-- Ethics and Social Responsibility in Tech
+# Legal and Operational Essentials
 
-### Refs:
+## Incorporation and Legal Structure
+
+## Intellectual Property and NDAs
+
+## Regulatory Compliance
+
+## Startup Operations 101
+
+## Ethics and Social Responsibility in Tech
+
+
+## Refs:
 - Startup Law and Fundraising – Alejandro Cremades
 - The Entrepreneur's Guide to Business Law – Constance Bagley
 - Running Lean – Ash Maurya

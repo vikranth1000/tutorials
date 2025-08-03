@@ -1,8 +1,13 @@
-## Go-To-Market Strategy
-- Pricing Strategies
-- Marketing and Distribution Channels
-- Growth Hacking Fundamentals
-- Launch Planning
+# Go-To-Market Strategy
+
+## Pricing Strategies
+
+## Marketing and Distribution Channels
+
+## Growth Hacking Fundamentals
+
+## Launch Planning
+
 
 ### Refs
 - Obviously Awesome – April Dunford (Positioning)

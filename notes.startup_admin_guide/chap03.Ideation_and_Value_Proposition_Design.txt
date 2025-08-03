@@ -1,8 +1,13 @@
-## Ideation and Value Proposition Design
-- Brainstorming and Creativity Techniques
-- Value Proposition Canvas
-- Jobs-To-Be-Done (JTBD) Framework
-- Initial Idea Validation
+# Ideation and Value Proposition Design
+
+## Brainstorming and Creativity Techniques
+
+## Value Proposition Canvas
+
+## Jobs-To-Be-Done (JTBD) Framework
+
+## Initial Idea Validation
+
 
 ### Refs
 - Value Proposition Design – Strategyzer (Osterwalder et al.)

@@ -1,8 +1,13 @@
-## Legal & Compliance
-- Contracts, Terms, and IP Protection
-- Regulatory Considerations (e.g., Fintech, Healthtech)
-- Risk Management and Due Diligence
-- Security & Data Privacy (GDPR, SOC2, etc.)
+# Legal & Compliance
+
+## Contracts, Terms, and IP Protection
+
+## Regulatory Considerations (e.g., Fintech, Healthtech)
+
+## Risk Management and Due Diligence
+
+## Security & Data Privacy (GDPR, SOC2, etc.)
+
 
 ### Refs
 - Startup Law and Fundraising – Alejandro Cremades

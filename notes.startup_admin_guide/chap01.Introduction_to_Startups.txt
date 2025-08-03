@@ -1,11 +1,17 @@
-## Introduction to Startups
-- What is a Startup?
-- Myths vs. Realities
-- The Entrepreneurial Mindset
-- History of Entrepreneurship and Tech Innovation
-- Vision, Mission, and Strategic Planning
+# Introduction to Startups
 
-### Refs:
+## What is a Startup?
+
+## Myths vs. Realities
+
+## The Entrepreneurial Mindset
+
+## History of Entrepreneurship and Tech Innovation
+
+## Vision, Mission, and Strategic Planning
+
+
+## Refs:
 - The Lean Startup – Eric Ries
 - Zero to One – Peter Thiel
 - The Startup Owner's Manual – Steve Blank

@@ -1,8 +1,13 @@
-## Operations
-- Internal Processes and Tools
-- Vendor Management and Compliance
-- Supporting Scalability and HR Interfaces
-- Tooling & Infrastructure (CRM, PM tools, vendor selection)
+# Operations
+
+## Internal Processes and Tools
+
+## Vendor Management and Compliance
+
+## Supporting Scalability and HR Interfaces
+
+## Tooling & Infrastructure (CRM, PM tools, vendor selection)
+
 
 ### Refs
 - The E-Myth Revisited – Michael Gerber
